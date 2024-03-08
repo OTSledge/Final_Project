@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "nvm": "^0.0.4"
+  },
+  "name": "final_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OTSledge/BOM-APP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OTSledge/BOM-APP/issues"
+  },
+  "homepage": "https://github.com/OTSledge/BOM-APP#readme",
+  "description": ""
+}
