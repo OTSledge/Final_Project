@@ -5,11 +5,24 @@ import About from './About';
 import Blog from './Blog';
 import Contact from './Contact';
 import './App.css'; // Make sure to import your CSS file
+import logo from './assets/Logo.png'
+import titleBanner from './assets/titleBanner.jpg'
 
 function App() {
   return (
     <Router>
       <nav>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <NavLink to="/" end className='non-active' style={{ flex: 1 }}>
+          <img style={{ maxHeight: '50px', padding: '0 10px' }} src={logo} alt="Logo" />
+        </NavLink>
+
+        <NavLink  to="/" className='non-active' style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+          <img style={{ maxHeight: '50px', padding: '0 10px' }} src={titleBanner} alt="titleBanner" />
+        </NavLink>
+
+        <div style={{ flex: 1 }}></div>
+      </div>
         <ul>
           <li>
             <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>
@@ -33,6 +46,8 @@ function App() {
           </li>
         </ul>
       </nav>
+      <div className='scroll-watcher'></div>
+
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
