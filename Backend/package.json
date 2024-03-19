@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mongodb": "^6.5.0",
     "nvm": "^0.0.4"
   },
   "name": "final_project",
@@ -13,7 +14,7 @@
     "typescript": "^5.4.2"
   },
   "scripts": {
-    "build": "tsc", 
+    "build": "tsc",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

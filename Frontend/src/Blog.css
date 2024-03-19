@@ -1,0 +1,71 @@
+/* BlogPostForm.css - Updated Styles for Responsiveness and Styling Fixes */
+
+.form {
+    max-width: 800px; /* Wider form for larger screens */
+    width: 90%; /* Makes the form responsive to window size */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff; /* Changed to pure white */
+    box-sizing: border-box; /* Prevents the control from exceeding its bounds */
+    outline-color: #007bff; /* Change focus outline color if desired */
+  }
+  
+  /* Override browser autofill color */
+  .form-control:-webkit-autofill,
+  .form-control:-webkit-autofill:hover, 
+  .form-control:-webkit-autofill:focus, 
+  .form-control:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .form {
+      width: 95%; /* Allows the form to fit better on smaller screens */
+      padding: 15px; /* Adjust padding to be more suitable for small screens */
+    }
+    .submit-button {
+      padding: 10px 20px; /* Adjust button size for small screens */
+      font-size: 16px; /* Adjust font size for readability */
+    }
+  }
+  

@@ -1,12 +1,11 @@
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 
-
-const envFound  = dotenv.config()
-
-if (envFound.error) {
-    throw new Error('no .env file found')
-}
+// Load environment variables from .env file
+dotenv.config();
 
 export default {
-    port: parseInt(process.env.PORT, 10)
-}
+    port: parseInt(process.env.PORT, 10) || 4000, // Providing a default value
+    email: process.env.EMAIL,
+    password: process.env.PASSWORD,
+    recipientEmail: process.env.RECIPIENT_EMAIL, // Consider fetching from .env
+};

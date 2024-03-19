@@ -1,0 +1,55 @@
+/* EmailForm.css adjustments for a wider card and reduced height */
+.email-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .email-form-box {
+    width: 60%; /* Make the card wider */
+    max-width: 600px; /* Ensure it doesn't get too wide on large screens */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    margin: 20px auto; /* Center the card */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow for more pop */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .email-form-box:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+  }
+  
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap to help with reducing the card's height */
+  }
+  
+  .email-form input,
+  .email-form textarea {
+    padding: 12px; /* Adjusted padding for aesthetics */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .email-form textarea {
+    /* Adjust the height of the textarea if it's still too tall */
+    height: 80px;
+  }
+  
+  .email-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .email-form button:hover {
+    background-color: #0056b3;
+  }
+  

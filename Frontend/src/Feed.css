@@ -1,0 +1,26 @@
+.post-container {
+    margin: 20px;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .post-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .post-title {
+    color: #333;
+    display: ;
+  }
+  
+  .post-content {
+    color: #666;
+  }
+  
+  

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-do
 import Home from './Home';
 import About from './About';
 import Blog from './Blog';
+import Feed from './Feed';
+
 import Contact from './Contact';
 import './App.css'; // Make sure to import your CSS file
 import logo from './assets/Logo.png'
@@ -36,7 +38,12 @@ function App() {
           </li>
           <li>
             <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>
-              Blog
+              Post
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/feed" className={({ isActive }) => isActive ? 'active' : ''}>
+              Feed
             </NavLink>
           </li>
           <li>
@@ -51,6 +58,7 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/feed" element={<Feed />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
       </Routes>
